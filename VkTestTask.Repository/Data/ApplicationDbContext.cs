@@ -21,7 +21,7 @@ namespace VkTestTask.Repository.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=vktesttask_users;Username=postgres;Password=Kolonka2022");
+            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=*dbname*;Username=postgres;Password=*password*");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
